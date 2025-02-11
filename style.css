@@ -1,0 +1,115 @@
+/* Reset e estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #04C4D9;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+header {
+    background: #0388A6;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    background-color: #04C4D9;
+}
+
+nav a:hover {
+    text-decoration: none;
+
+}
+
+
+section {
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 40px;
+    text-align: center;
+}
+
+h2 {
+    color: #6c63ff;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #4a47a3;
+}
+
+p {
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.sobre {
+    background: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#avaliafilme div, aside {
+    background: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: #0388A6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer button {
+    background:#04C4D9;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer button:hover {
+    background: #6c63ff;
+    color: white;
+}
+
+footer a {
+    color: #f8f9fa;
+    text-decoration: none;
+    font-weight: bold;
+}
