@@ -1,3 +1,9 @@
+/* zerar definições */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* Definições gerais */
 body {
@@ -5,6 +11,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #04C4D9;
+    overflow-x: hidden;
 }
 
 /* Cabeçalho */
@@ -15,36 +22,50 @@ header {
     background: #0388A6;
     color: rgb(255, 255, 255);
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 header img {
+    display: block;
+    margin: 0 auto; 
     height: 50px;
+}
+
+header p {
+    text-align:left; 
+    margin-top: 5px; 
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 nav a {
     background:#04C4D9;
-    color: #ffffff;
+    color: #F2F2F2;
     font-weight: bold;
     border: none;
     text-decoration: none;
-    padding: 10px 20px;
-    margin: 10px;
-    border-radius: 5px;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 15px;
     cursor: pointer;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 nav a:hover{
-    background: #0388A6;
-    color: white;
+    background: #F2F2F2;
+    color:#0388A6;
 }
 /* Seções */
 section {
-    padding: 50px;
-    margin: 20px auto;
-    width: 75%;
+    padding: 30px;
+    margin: 15px auto;
+    width: 90%;
     border-radius: 30px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    align-items: center;
 }
 
 h1 {
@@ -54,16 +75,25 @@ h1 {
 
 #inicio{
     background-color: #F2F2F2;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.balao{
+    width: 30%;
+    display: block;
+    margin: 0 auto;
 }
 
 #sobre{
     background: #000000;
-    padding: 50px;
-    margin: 100px;
+    padding: 30px;
+    margin: 15px auto;
+    width: 90%;
     border-radius: 30px;
     margin-top: 30px;
     color: #F2F2F2;
     margin-bottom: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 #sobre h2{
@@ -89,12 +119,13 @@ img {
 #ler{
     background-color: #F2F2F2;
     margin-bottom: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Personagens */
 #perso {
-    background-color: #000; /* Fundo preto */
-    color: #F2F2F2; /* Texto branco */
+    background-color: #000; 
+    color: #F2F2F2; 
     padding: 50px;
     border-radius: 30px;
     max-width: 800px;
@@ -150,6 +181,7 @@ img {
     color: #F2F2F2;
     padding: 50px;
     border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     width: 25%;
 }
 
@@ -184,7 +216,7 @@ footer button,a {
     text-decoration: none;
     padding: 10px 20px;
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
@@ -198,5 +230,102 @@ footer a:hover {
     text-decoration: none;
     background: #F2F2F2;
     color: #0388A6;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav a {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    
+    section {
+        width: 90%;
+        padding: 30px;
+    }
+    
+    #avaliafilme {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #avaliafilme .branco, #avaliafilme .preto {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    #perso img {
+        width: 120px;
+        height: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    header img {
+        height: 40px;
+    }
+    
+    h1, h2 {
+        font-size: 20px;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+    
+    .balao {
+        width: 50%;
+    }
+    
+    footer {
+        padding: 15px;
+    }
+    
+    footer button, footer a {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    header p {
+        font-size: 14px;
+    }
+    
+    nav a {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    
+    section {
+        width: 95%;
+        padding: 20px;
+    }
+    
+    #perso img {
+        width: 100px;
+        height: 70px;
+    }
+    
+    .balao {
+        width: 70%;
+    }
+    
+    footer button, footer a {
+        padding: 6px 10px;
+        font-size: 10px;
+    }
 }
 
