@@ -145,7 +145,6 @@ img {
     margin-bottom: 40px;
 }
 
-/* Estilo da caixa lateral de curiosidades */
 #avaliafilme .preto {
     background-color: black;
     color: #F2F2F2;
@@ -154,18 +153,15 @@ img {
     width: 25%;
 }
 
-/* Ajustando título de curiosidades */
 #avaliafilme .preto h2 {
     color: #00BCD4;
 }
 
-/* Ajustando espaçamento entre elementos */
 #avaliafilme p {
     font-size: 14px;
     line-height: 1.5;
 }
 
-/* Ajuste do player de vídeo */
 #avaliafilme iframe {
     width: 100%;
     border-radius: 10px;
