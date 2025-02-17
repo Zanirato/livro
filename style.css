@@ -1,90 +1,120 @@
-/* Reset e estilos gerais */
-* {
+
+/* Definições gerais */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
     background-color: #04C4D9;
-    color: #ffffff;
-    line-height: 1.6;
 }
 
+/* Cabeçalho */
 header {
-    background: #0388A6;
-    color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: #0388A6;
+    color: rgb(255, 255, 255);
     padding: 20px;
 }
 
 header img {
-    width: 50px;
     height: 50px;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
+    background:#04C4D9;
+    color: #ffffff;
     font-weight: bold;
-    background-color: #04C4D9;
-}
-
-nav a:hover {
+    border: none;
     text-decoration: none;
-
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-
+nav a:hover{
+    background: #0388A6;
+    color: white;
+}
+/* Seções */
 section {
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-    padding: 40px;
-    text-align: center;
-}
-
-h2 {
-    color: #6c63ff;
-    margin-bottom: 15px;
+    padding: 50px;
+    background: #F2F2F2;
+    margin: 20px auto;
+    width: 75%;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    color: #4a47a3;
+    color: #0388A6;
+    text-align: center;
 }
 
-p {
-    font-size: 1.1em;
-    max-width: 800px;
-    margin: 0 auto;
+#sobre{
+    background: #000000;
+    padding: 50px;
+    margin: 100px;
+    border-radius: 30px;
+    margin-top: 30px;
+    color: #F2F2F2;
+}
+
+#sobre h2{
+    color: #00eaff;
+}
+
+h2 {
+    color: #0388A6;
+    border-bottom: 3px solid #ccc;
+    padding-bottom: 12px;
+    margin-bottom: 25px;
 }
 
 img {
     max-width: 100%;
+    display: block;
+    margin: 20px auto;
     height: auto;
     border-radius: 10px;
     margin-top: 15px;
 }
 
-.sobre {
-    background: #000000;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 20px;
+/* Personagens */
+#perso {
+    background-color: #000; /* Fundo preto */
+    color: #F2F2F2; /* Texto branco */
+    padding: 50px;
+    border-radius: 30px;
+    max-width: 800px;
+    margin: 10px auto;
+    margin-top: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
-#avaliafilme div, aside {
-    background: #fff;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+#perso h2 {
+    color: #00eaff;
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
+#perso h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+#perso img {
+    width: 150px; 
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+
+/* Botões */
 footer {
     background: #0388A6;
     color: white;
@@ -93,23 +123,27 @@ footer {
     margin-top: 20px;
 }
 
-footer button {
+footer button,a {
     background:#04C4D9;
     color: #ffffff;
+    font-weight: bold;
     border: none;
+    text-decoration: none;
     padding: 10px 20px;
     margin: 10px;
     border-radius: 5px;
     cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 footer button:hover {
-    background: #6c63ff;
+    background: #0388A6;
     color: white;
 }
 
-footer a {
-    color: #f8f9fa;
+footer a:hover {
     text-decoration: none;
-    font-weight: bold;
+    background: #0388A6;
+    color: white;
 }
+
