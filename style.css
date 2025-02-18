@@ -78,11 +78,6 @@ h1 {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.balao{
-    width: 30%;
-    display: block;
-    margin: 0 auto;
-}
 
 #sobre{
     background: #000000;
@@ -107,15 +102,76 @@ h2 {
     margin-bottom: 25px;
 }
 
-img {
+
+.item{
     max-width: 100%;
-    display: block;
+    display: none;
     margin: 20px auto;
     height: auto;
     border-radius: 10px;
-    margin-top: 15px;
+    overflow: hidden;
 }
 
+.item.ativo{
+    display: block;
+}
+
+.item .balao{
+    width: 40%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    /* centralizar */
+    position: relative;
+    transform: translate(-50%);
+    top: 50%;
+    left: 30%;
+    transform: translate(-75%, -10%);
+}
+
+
+/* botão */
+#anterior, #proximo{ 
+    position: absolute;
+    top: 95%;
+    transform: translatey(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(12, 11, 28, 0.6);
+    border: 1px solid #eee9;
+    color: #eee;
+    font-size: x-large;
+    font-family: monospace;
+    cursor: pointer;
+    z-index: 4;
+    border-radius: 50%;
+}
+
+#anterior{
+    left: 30px;
+}
+
+#proximo{
+    right: 30px;
+}
+
+@keyframes mexer{
+    from{
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+.item.ativo img.balao{
+    animation: mexer 0.5s ease-in-out 1;
+}
+
+
+section{
+    box-shadow: none;
+}
+
+/* Por quê ler? */
 #ler{
     background-color: #F2F2F2;
     margin-bottom: 40px;
@@ -261,6 +317,17 @@ footer a:hover {
         align-items: center;
     }
     
+    .item .balao{
+        transform: translate(-35%);
+        width: 90%;
+        height: 100%;
+    }
+
+    #anterior, #proximo{ 
+        position: absolute;
+        top: 136%;
+    }
+
     #avaliafilme .branco, #avaliafilme .preto {
         width: 100%;
         margin-bottom: 20px;
