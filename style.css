@@ -57,6 +57,7 @@ nav a {
 nav a:hover{
     background: #F2F2F2;
     color:#0388A6;
+    padding: 10px 14px;
 }
 /* Seções */
 section {
@@ -72,6 +73,11 @@ h1 {
     color: #045061;
     text-align: center;
 }
+
+h1:hover{
+    color: #0e6579;
+}
+
 
 #inicio{
     background-color: #F2F2F2;
@@ -95,6 +101,10 @@ h1 {
     color: #00eaff;
 }
 
+#sobre h2:hover{
+    color: #a2e5eb;
+}
+
 h2 {
     color: #0388A6;
     border-bottom: 3px solid #ccc;
@@ -102,6 +112,9 @@ h2 {
     margin-bottom: 25px;
 }
 
+h2:hover{
+    color: #045061;
+}
 
 .item{
     max-width: 100%;
@@ -129,6 +142,10 @@ h2 {
     transform: translate(-75%, -10%);
 }
 
+.balao:hover{
+    width: 42%;
+    height: 102%;
+}
 
 /* botão */
 #anterior, #proximo{ 
@@ -197,10 +214,18 @@ section{
     margin-bottom: 20px;
 }
 
+#perso h2:hover{
+    color: #a2e5eb;
+}
+
 #perso h3 {
     color: #fff;
     font-size: 20px;
     margin-top: 15px;
+}
+
+#perso h3:hover{
+    color: #b2f1f7;
 }
 
 #perso img {
@@ -245,6 +270,10 @@ section{
     color: #00BCD4;
 }
 
+#avaliafilme .preto h2:hover{
+    color:#b2f1f7;
+}
+
 #avaliafilme p {
     font-size: 14px;
     line-height: 1.5;
@@ -280,12 +309,14 @@ footer button,a {
 footer button:hover {
     background: #F2F2F2;
     color: #0388A6;
+    padding: 12px 22px;
 }
 
 footer a:hover {
     text-decoration: none;
     background: #F2F2F2;
     color: #0388A6;
+    padding: 12px 22px;
 }
 
 /* Responsividade */
